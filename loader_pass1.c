@@ -27,6 +27,10 @@ int strToInt(char *hex) {
     return val;
 }
 
+int hexToInt(char *hex) {
+    return strToInt(hex);
+}
+
 void addSymbol(char *name, int address) {
     for (int i = 0; i < symbolCount; i++) {
         if (strcmp(ESTAB[i].name, name) == 0) {
